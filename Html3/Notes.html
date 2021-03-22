@@ -8,7 +8,7 @@
 </head>
 <body>
     
-    <P>Table has</P>\
+    <P>Table has</P>
     <ul>
         <li>tr - for table row </li>
         <li>td - table data</li>
@@ -26,7 +26,7 @@
         <p>Rowspan <td rowspan="2"></td></p>
         <p>Rowspan <td colspan="2"></td></p>
     </ul>
-
+<hr>
     <P><b>Forms</b></P>
     <p>example of Form</p>
     <form action="/abc">
@@ -41,10 +41,92 @@
         <li>The method attribute specifies which HTTP method should be used.</li>
         <li>input element tag: to take input value <input></li>
         <li>Placeholder is a text hold in empty input<input type="text" PlaceHolder here"></li>
-        <li>Label in form :-</li>
+        <li>Label in form :-it is used to add link two or multiple elements.
+            <label for="labelname">Lable heading </label>
+            <input type="checkbox" name="labelname" id="labelname">
+            <p>In Label we provide for="same name" == id="samename" in link label.</p>
+        </li>
+    
     </ul></p>
+<hr>
+    <p>HTML Button</p>
+    <P>inside form buttom always try to submit the file but outside they 
+        not .
+    </P>
 
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <p>Input type="button" is a default button which do not submits the form.</p>
+        This is input type button :-<input type="button">
+        But this button is if input type = submit <input type="submit">
+        This is submit Button:-<button>Submit</button>
+    </form>
+<hr>    
+    <p>Name Attribute in form</p>
+    <form action="/nowhere">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter name" name="username">
+        <button>Submit</button>
+        <p>on button click it goes to file:///D:/nowhere?username=asd </p>
+        <p>name in form to get the user entered data.</p>
+    </form>
+<hr>
+    <P>Checkbox,radio button & selects</P>
+    <form action="/">
+        <p>To begin with check we use checked Keyword.</p>
+        <input type="checkbox" name="" id="agree">
+        <label for="agree"> I agree</label>
+        <p>Raddio Button , only differne in this we can only select one.</p>
+        <input type="radio" name="samename" id="label1" value="label1 selected">
+        <label for="label1">Label1</label>
+        <input type="radio" name="samename" id="label2" value="label2 selected">
+        <label for="label2">label2</label>
+        <input type="radio" name="samename" id="label3" value="label3 selected">
+        <label for="label3">lable3</label>
+        <p>Here we can select only one button because all have same name</p>
+        <p>If any one is selected then <b>value tag</b> used to get the radio button value. </button></p>
+    </form>
+<hr>
+    <p>select or Drop down Menu</p>
+    <form action"/">
+        <label for="selectoptions">Select something</label>
+        <select name="select_any" id="selectoptions">
+            <option value="selectedvalue1">Value 1</option>
+            <option value="selectedvalue2">Value 2</option>
+            <option value="selectedvalue3">Value 3</option>
+        </select>
+    </form>
+<hr>
+<p>Range tag : Used to give a slider kind of choice </p>
+<form action="/">
+    <input type="range" id="rangelabel" name="vol" min="0" max="11" name="range_value">
+    <label for="rangelabel">Range</label>
+    <p>Incluing "step"  in input  Range means step times multiplication .
+        Here Step == 7 means each increment mean +7.
+    </p>
+    <input type="range" id="rangelabel" name="vol" min="0" max="11" name="range_value" step=7>
+    <label for="rangelabel">Range</label>
+</form>
 
+<p>At last <b>Text Area</b></p>
+<textarea id="requests"></textarea>
+<p>Row & column tag used to add more rows. rows="5" cols="33" </p>
+<textarea rows="5" cols="33"></textarea>
+
+<p>Form Validations</p>
+<p>Here Biult in Browser Validations. not server side validation.</p>
+<form>
+    <p>Required : Built not validation so feild can not be empty.</p>
+    <label for="first">Enter Here</label>
+    <input type="text" name="First" id="first" required>
+    <p>We can also use maxlength and minlength for size</p>
+    <label for="second">Password</label>
+    <input type="password" name="pass" id="second" minlength="5" maxlength="8">
+    <p>Input type can also be used as validatio like</p>
+    <input type="email"><p>Input type is Email.</p>
+    <input type="url"><p>Input type is Password.</p>
+</form>
 
 
 </body>
