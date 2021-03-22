@@ -1,0 +1,38 @@
+Types of selectors In Css
+
+First is # selectors that is Id selector.
+
+Second is . Selector which is Class Selector.
+The CSS class Selector
+The class selector selects HTML elements with a specific class attribute.
+
+To select elements with a specific class, write a period (.) character, followed by the class name.
+
+Example
+In this example all HTML elements with class="center" will be red and center-aligned: 
+
+.center {
+  text-align: center;
+  color: red;
+}
+
+
+
+THE CASCADE 
+The order your styles are declared in and linked To
+matters
+
+As two tags are selected multiple times then the lastest
+is always considered.
+lower the line is always considered as latest
+
+which is selected first in conflict:  Inline Style >ID > CLASS > ELEMENT Selector.
+
+!important    is used to tell browser that it most specific then any 
+selector. and used to include inside selection 
+e.g   button{
+    background-color: red !important;
+}
+
+
+Inherit means takes properties from the parent.
