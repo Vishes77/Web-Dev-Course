@@ -13,7 +13,7 @@ html {
     height: 20%;
 }
 
-
+/* em are generally with respect to their parent  */
 #ems h2 {
     font-size: 2em;
     margin-left: 1em;
@@ -41,7 +41,8 @@ button {
     color: white;
 }
 
-
+/* with respect to the root html element mean campreared 
+with root font size */
 #rems h2{
     font-size: 3rem;
 }
