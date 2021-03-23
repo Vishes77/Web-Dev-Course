@@ -1,0 +1,36 @@
+// Making an array:
+const colors = ["red", "orange", "yellow"];
+
+// Arrays are indexed like strings:
+colors[0]; // "red"
+
+// They have a length:
+colors.length; //3
+
+// Important array methods:
+//push(value) - adds value to the END of an array
+//pop() - removes and returns last value in array
+
+//unshift(val) - adds value to START of an array
+//shift() - removes and returns first element in an array
+
+
+// In JavaScript arrays are dynamic in nature.
+-we can add objects at any location.
+-concat -- merge arrays.
+-includes -- look for a value. // return True or False Value.
+-indexof - just like string.indexof
+-join - creates a string from an array.
+-reverse - reverses an array.
+-slice - copies a portion on an array.
+-splice - insert or removes/replaces elements.
+
+ let arrDeletedItems = arr.splice(start[, deleteCount[, item1[, item2[, ...]]]])
+
+-sort - sorts an array.
+
+
+>>[1,2,4] === [1,2,4] are not equal in JavaScript.
+due to storage in different loactions.
+
+const array[] // allow changes in array but not in case of variables not change allowed.
