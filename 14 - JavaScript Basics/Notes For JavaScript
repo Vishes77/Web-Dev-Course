@@ -1,0 +1,60 @@
+TO fuild the Logical Part of a Website we use JavaScript.
+
+Primitive Types in JavaScript
+-Numbers
+-Strings
+-Boolean
+-Null
+-Undefined
+
+Numbers
+--In JavaScript Has only one Number Type unclude
+Positive,Negative ,whole numbers or Decimal Numbers.
+
+Math Operator built in JavaScript
+add,sub,mul,div and modulo
+
+Follows The Rule PEMDAS rule except BODMAS Rule in math operators
+
+
+NaN : Not a Number.
+0/0 //NaN
+1 + NaN  //NaN
+
+typeof() : tells the type of element that is passed.
+
+** is exponent expression.
+3**2 == 3^2
+
+----Varaiables :
+Basic Syntex =>   let someName = Value;
+e.g let year = 1985;
+
+ += ,-= ,*= ,/= works
+ increment++ , decrement--     also works.
+
+
+ ---Const & var :
+ Const Keyword --> caonst work just like let,except you change the Value.
+ var --> Old way to make Variables in JavaScript and it still works.
+
+ --Booleans 
+True or False are the only values are There.
+eg. let abc = True;
+Since Boolean is a Varible so it can be changed from true/ false to
+numbers.(Exception)
+
+Variables Naming Convensions:
+-we can not have spaces in some in Name.
+-we cannot start name with digit.
+-can contain '$','_'.
+
+CamelCase : 
+abc_efg-->snake case
+abcDeg -->CamelCase,can start with capital letter.
+
+
+
+
+
+

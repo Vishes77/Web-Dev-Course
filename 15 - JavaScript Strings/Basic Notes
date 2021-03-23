@@ -1,0 +1,72 @@
+Strigs are Written inside quotes "abc".
+e.g let username = "ABC";
+
+Note : 'abc"efg"d' // it is one Strings
+if we single quotes in and double quotes outside.
+and vice-versa is aslo true as well.
+
+Indice & Length :
+Each character has a corrosponding index.
+
+string.Length // gives the length of the String.
+
+//concatanation of String.
+"A" + "B" ==> "AB"
+
+1 + "A" ==> "1A" //result is string.
+
+
+--String methods
+-These are built-in actions we can perform with 
+individual Strings.
+-Search in a string.
+-replaceing in a string.
+-Changing in a String.
+
+
+SYNTEX : thing.method() 
+e.g 
+.length()
+.toupperCase()
+.trim() //removes extra spaces from the string.
+
+//chaining multiple methods.
+"string".trim().touppercase()
+
+.indexof('argument') // first appereance of passed argument.
+
+
+.slice(begin,end(optional)) // slice a portion of a string and give us a new String.
+//if slice negative index is passed then it slicing begin from the end towards left.
+
+//.replace()
+"string".replace('toreplace','toreplacewith')
+
+//.repeat()
+"string".repeat(NumberofTimesvalue)
+
+
+
+------String Templete Literals-------
+Templete Literals are Strings that allow embedded expressions,which will be
+evaluated and then turn into a restfull string.
+e.g
+`I counted ${3 + 4} sheep`;
+we use back-tick " ` ` " which is just avobe the tab key.
+
+>> NULL & Undefined
+--NULL
+...Intentional Absence of any Value And Must be assigned.(have value but value is <nothing>)
+--Undefined
+...Variables that do nat have an assigned value are undefined.(not value)
+
+Math Objects
+built in JavaScript math methods()
+
+math.pi;
+math.floor();
+math.ceil();
+math.pow();
+math.abs(); // for getting only postive numbers.
+//Generate Random Number
+--math.random() // give a random number bet 0 - 1, but not 1 .

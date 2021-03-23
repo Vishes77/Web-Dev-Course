@@ -1,0 +1,39 @@
+Comparision Operators;
+=== stictly equal
+we can comapare numbers as well as strings 
+in JavaScript.
+
+'a' < 'b' //true
+'A' > 'a' //False
+
+
+Console , Alert & Prompt.
+
+console.log(); // print value in console from the
+JavaScript code part area.
+
+alert() .. Is a pop up of a browser.
+
+prompt("ARGUMENT");
+.. take a input from the user as alert
+and print it on the console.
+
+preseInt(value)  // used to type any value to another type.
+
+
+Truthy and Falsyness
+
+False Values in JavaScript are :
+--false
+-- 0
+-- ""  (empty string)
+--null 
+--undefined
+--NaN
+
+
+if && , || , ! are in one line
+then 
+-->&& has highest priority.
+--> then we have ||
+--> then !
