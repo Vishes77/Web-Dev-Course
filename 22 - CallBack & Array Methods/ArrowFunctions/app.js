@@ -17,11 +17,17 @@ const square = num => {
 //     return Math.floor(Math.random() * 6) + 1
 // }
 
+
 const rollDie = () => (
     Math.floor(Math.random() * 6) + 1
 )
+//IMPORTANT-->only work when we have one line to return.
+// here in place of {} ,we used () which implicitly
+//return what is inside().
 
-
+//This is also valid ofr above code
+const rollDie = () => Math.floor(Math.random() * 6) + 1
+//same as above code we have just removed parenthesis.
 
 
 const movies = [

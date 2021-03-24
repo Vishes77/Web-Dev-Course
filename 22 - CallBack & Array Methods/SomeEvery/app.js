@@ -52,3 +52,4 @@ const movies = [
 
 
 movies.some(movie => movie.year > 2015)
+//some one or more pass the condition.

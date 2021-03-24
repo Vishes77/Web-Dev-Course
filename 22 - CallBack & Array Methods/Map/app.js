@@ -4,6 +4,9 @@ const doubles = numbers.map(function (num) {
     return num * 2;
 })
 
+// Basically map is same like forEach but here 
+// result is stored in a new array. and each element are inserted into it in each call.
+
 
 const movies = [
     {
@@ -27,5 +30,5 @@ const movies = [
 const titles = movies.map(function (movie) {
     return movie.title.toUpperCase();
 })
-
+// here all tittles are stored in an array. called tittles array.
 
