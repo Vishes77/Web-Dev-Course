@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 100px;
 }
 div {
     width: 200px;
@@ -23,11 +23,10 @@ h1 {
     border-width: 5px;
     border-color: black; 
     border-style: solid;
-    /* box-sizing: border-box;  border goes on online*/ 
+    box-sizing: border-box; /* border goes on online  */
     margin-left: 50px;
     margin-bottom: 100px;
-}
-
+} 
 #two {
     background-color: #b5838d;
     border-color: #ffcdb2;
@@ -48,4 +47,4 @@ h1 {
 
 button {
     padding: 10px 20px 30px 40px;
-}
+} 
