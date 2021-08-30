@@ -32,3 +32,17 @@ const titles = movies.map(function (movie) {
 })
 // here all tittles are stored in an array. called tittles array.
 
+// map ka kaam ye hai ki jo v function call se value return hota hai
+// usko pirr ek array mai store karte jate hai sequentally.
+
+// let doubles = numbers.map(function(number){
+//     return number*2;
+// })
+
+// let tittle = movies.map(function(movie){
+//     return movie.title.toUpperCase();
+// })
+
+// tittle.forEach(function(number){
+//     console.log(number);
+// });

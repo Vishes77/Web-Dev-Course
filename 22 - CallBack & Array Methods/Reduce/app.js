@@ -8,16 +8,17 @@ const prices = [9.99, 1.50, 19.99, 49.99, 30.50];
 
 // const total = prices.reduce((total, price) => {
 //     return total + price
+// }  
+// what ever we return that becomes the new value of the accumulator.
+
+// const total = prices.reduce((total, price) => total + price)
+
+// const minPrice = prices.reduce((min, price) => {
+//     if (price < min) {
+//         return price;
+//     }
+//     return min;
 // })
-
-const total = prices.reduce((total, price) => total + price)
-
-const minPrice = prices.reduce((min, price) => {
-    if (price < min) {
-        return price;
-    }
-    return min;
-})
 
 const movies = [
     {
@@ -79,3 +80,28 @@ const highestRated = movies.reduce((bestMovie, currMovie) => {
 const evens = [2, 4, 6, 8];
 evens.reduce((sum, num) => sum + num) //20
 evens.reduce((sum, num) => sum + num, 100) //120 here 100 is just the intitial value.
+
+// let total = prices.reduce((accumulator , currentvalue) => {
+//     return accumulator + currentvalue;
+// })
+
+// let minval = prices.reduce((accumulator,currentvalue) => {
+//     if(currentvalue < accumulator){
+//         accumulator = currentvalue;
+//     }
+//     return accumulator;
+// })
+
+// let highestrated = movies.reduce((highest,movie) =>{
+//     if(movie.score > highest.score ){
+//         return movie;
+//     }
+//     return highest;
+// })
+
+// // const highestRated = movies.reduce((bestMovie, currMovie) => {
+// //     if (currMovie.score > bestMovie.score) {
+// //         return currMovie;
+// //     }
+// //     return bestMovie;
+// // })

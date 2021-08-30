@@ -55,11 +55,22 @@ const movies = [
 
 
 
-const badMovies = movies.filter(m => m.score < 70)
+// const badMovies = movies.filter(m => m.score < 70)
 
-const recentMovies = movies.filter(m => m.year > 2000)
+// const recentMovies = movies.filter(m => m.year > 2000)
 
-// const goodMovies = movies.filter(m => m.score > 80)
-// const goodTitles = goodMovies.map(m => m.title)
+// // const goodMovies = movies.filter(m => m.score > 80)
+// // const goodTitles = goodMovies.map(m => m.title)
 
-movies.filter(m => m.score > 80).map(m => m.title);
+// movies.filter(m => m.score > 80).map(m => m.title);
+
+// let highestRated = movies.filter(n => {
+//     return n.score > 90;
+// })
+
+// let highestRated = movies.filter( n => ( n.score > 90))
+// let tittles = highestRated.map(n => n.title)
+
+ let besttittle = movies
+    .filter(n => n.score > 90)
+    .map(m => m.title)

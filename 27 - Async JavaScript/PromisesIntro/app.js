@@ -54,27 +54,27 @@ const fakeRequestPromise = (url) => {
 
 
 
-// fakeRequestPromise('yelp.com/api/coffee/page1')
-//     .then(() => {
-//         console.log("IT WORKED!!!!!! (page1)")
-//         fakeRequestPromise('yelp.com/api/coffee/page2')
-//             .then(() => {
-//                 console.log("IT WORKED!!!!!! (page2)")
-//                 fakeRequestPromise('yelp.com/api/coffee/page3')
-//                     .then(() => {
-//                         console.log("IT WORKED!!!!!! (page3)")
-//                     })
-//                     .catch(() => {
-//                         console.log("OH NO, ERROR!!! (page3)")
-//                     })
-//             })
-//             .catch(() => {
-//                 console.log("OH NO, ERROR!!! (page2)")
-//             })
-//     })
-//     .catch(() => {
-//         console.log("OH NO, ERROR!!! (page1)")
-//     })
+fakeRequestPromise('yelp.com/api/coffee/page1')
+    .then(() => {
+        console.log("IT WORKED!!!!!! (page1)")
+        fakeRequestPromise('yelp.com/api/coffee/page2')
+            .then(() => {
+                console.log("IT WORKED!!!!!! (page2)")
+                fakeRequestPromise('yelp.com/api/coffee/page3')
+                    .then(() => {
+                        console.log("IT WORKED!!!!!! (page3)")
+                    })
+                    .catch(() => {
+                        console.log("OH NO, ERROR!!! (page3)")
+                    })
+            })
+            .catch(() => {
+                console.log("OH NO, ERROR!!! (page2)")
+            })
+    })
+    .catch(() => {
+        console.log("OH NO, ERROR!!! (page1)")
+    })
 
 
 // THE CLEANEST OPTION WITH THEN/CATCH

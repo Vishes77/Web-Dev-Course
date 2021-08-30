@@ -43,7 +43,7 @@ function makeMysteryFunc() {
     }
 }
 
-
+// IMPORTANT CONCEPT
 function makeBetweenFunc(min, max) {
     return function (num) {
         console.log("HI");
