@@ -1,3 +1,11 @@
+// ===================================
+// USING FOR...IN TO ITERATE AN OBJECT
+// whereas
+// for..of loop is not for object literals it is for iterating over iterable objects, including: built-in String, Array,
+// array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set,
+
+
+
 const testScores = {
     keenan: 80,
     damon: 67,

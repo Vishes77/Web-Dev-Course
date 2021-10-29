@@ -18,9 +18,9 @@ const square = num => {
 // }
 
 
-const rollDie = () => (
-    Math.floor(Math.random() * 6) + 1
-)
+// const rollDie = () => (
+//     Math.floor(Math.random() * 6) + 1
+// )
 //IMPORTANT-->only work when we have one line to return.
 // here in place of {} ,we used () which implicitly
 //return what is inside().
@@ -49,15 +49,15 @@ const movies = [
     }
 ]
 
-// const newMovies = movies.map(function (movie) {
-//     return `${movie.title} - ${movie.score / 10}`
-// })
+const newMovies = movies.map(function (movie) {
+    return `${movie.title} - ${movie.score / 10}`
+})
 
 
 // IMPLICIT RETURN
-const newMovies = movies.map(movie => (
-    `${movie.title} - ${movie.score / 10}`
-))
+// const newMovies = movies.map(movie => (
+//     `${movie.title} - ${movie.score / 10}`
+// ))
 
 
 
