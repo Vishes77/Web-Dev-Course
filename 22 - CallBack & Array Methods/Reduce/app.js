@@ -6,10 +6,15 @@ const prices = [9.99, 1.50, 19.99, 49.99, 30.50];
 // }
 // console.log(total)
 
+// here total is accumulator & price is iterator which hold value for each element. 
+// what ever we return that becomes the new value of the accumulator.
+
 // const total = prices.reduce((total, price) => {
 //     return total + price
 // }  
-// what ever we return that becomes the new value of the accumulator.
+// intially total has 0'th index & price has 1st index intially.
+// accumulator(i.e total) does't increment itself 
+// but prince increment each time by 1 till n-1.
 
 // const total = prices.reduce((total, price) => total + price)
 

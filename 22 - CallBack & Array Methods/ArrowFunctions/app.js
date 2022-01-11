@@ -13,9 +13,9 @@ const square = num => {
     return num * num;
 }
 
-// const rollDie = () => {
-//     return Math.floor(Math.random() * 6) + 1
-// }
+const rollDie = () => {
+    return Math.floor(Math.random() * 6) + 1
+}
 
 
 // const rollDie = () => (
@@ -48,6 +48,11 @@ const movies = [
         score: 90
     }
 ]
+
+// map() creates a new array from calling a function for every array element.
+// map() calls a function once for each element in an array.
+// map() does not execute the function for empty elements.
+// map() does not change the original array.
 
 const newMovies = movies.map(function (movie) {
     return `${movie.title} - ${movie.score / 10}`

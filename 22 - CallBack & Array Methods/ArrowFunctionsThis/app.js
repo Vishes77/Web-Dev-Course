@@ -2,6 +2,7 @@ const person = {
     firstName: 'Viggo',
     lastName: 'Mortensen',
     fullName: function () {
+        console.log(this);
         return `${this.firstName} ${this.lastName}`
         // referes to the owner object it belong too.
     }, // keyword this refers to whatever comes left to the object.

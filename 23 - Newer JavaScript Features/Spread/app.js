@@ -1,3 +1,9 @@
+// Both rest and spred use same "..." dots but
+// in where we use make the differnce 
+// e.g rest is used to store the rest of the value on function call where as spread is store expaded 
+// https://www.youtube.com/watch?v=oob7bxg-Ctc ===> Rest vs spread.
+
+
 const nums = [13, 4, 5, 21, 3, 3, 1, 2, 7, 6, 4, 2, 53456];
 // SPREAD IN FUNCTIONS
 Math.max(nums) //NaN

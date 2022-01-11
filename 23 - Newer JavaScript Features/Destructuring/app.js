@@ -37,6 +37,7 @@ const user2 = {
 // const email = user.email; equivalent to  const { email } = user
 const { email, firstName, lastName, city, bio } = user;
 
+// for creating a renamed distructure.
 // const { born: birthYear, died: deathYear = 'N/A' } = user; // rensming is taking place for keys for the values. 
 
 // const { city, state, died = 'N/A' } = user2;
