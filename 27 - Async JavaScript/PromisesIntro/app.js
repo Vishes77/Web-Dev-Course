@@ -52,8 +52,6 @@ const fakeRequestPromise = (url) => {
 
 
 
-
-
 fakeRequestPromise('yelp.com/api/coffee/page1')
     .then(() => {
         console.log("IT WORKED!!!!!! (page1)")
@@ -99,5 +97,46 @@ fakeRequestPromise('yelp.com/api/coffee/page1')
         console.log(err)
     })
 
+//----------------------------------------------------------------------
+
+// const fakeRequest = (url) =>{
+//     return new Promise((resolve, reject) =>{
+//         const delay = Math.floor(Math.random() * 4000);
+//         setTimeout(() =>{
+//             if(delay > 3000){
+//                 reject("Timeout");
+//             }else{
+//                 resolve("Yeaah Done Bro.");
+//             }
+//         },delay);
+//     })
+// }
 
 
+// let abc = fakeRequest('abcd').then(()=>{
+//     console.log("Good its accepted");
+//     fakeRequest('abcd').then(()=>{
+//         console.log("Inside Accepeted.")
+//     }).catch(()=>{
+//         console.log("Thrown out sorry.")
+//     })
+// }).catch(()=>{
+//     console.log("Failed Bro Sorry");
+// })
+
+// fakeRequest('abc')
+//     .then(()=>{
+//         console.log("Inside 1");
+//         return fakeRequest('ab');
+//     })
+//     .then(()=>{
+//         console.log("Inside 2");
+//         return fakeRequest('a');
+//     })
+//     .then(()=>{
+//         console.log("Inside 3");
+//         return fakeRequest('-');
+//     })
+//     .catch(()=>{
+//         console.log("Some Error in Between");
+//     })

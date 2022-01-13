@@ -1,6 +1,6 @@
 // async function hello() {
 // }
-
+// The keyword async before a function makes the function return a promise:
 
 const sing = async () => {
     throw "OH NO, PROBLEM!"
