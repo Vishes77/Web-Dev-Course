@@ -19,9 +19,11 @@ for (let link of allLinks) {
 
 // innertext-- gives all the text only. 
 //and textContent() give the way it written with the pragraph change and spaces
-//innerHtml -- text + tags aslo given.
+//innerHtml -- text + inner tags aslo given.
 
-//getattribute()
+//getattribute() //to get inside tag attributes values.
+//e.g document.getElementById("toc").getAttribute("role")
+
 //setattribure('attribute','the value over here');
 
 ///style only contain inline style(it is added inline in the main.html file) of an element from main.html files

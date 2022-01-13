@@ -61,3 +61,19 @@ delayedColorChange('red', 1000)
     .then(() => delayedColorChange('blue', 1000))
     .then(() => delayedColorChange('indigo', 1000))
     .then(() => delayedColorChange('violet', 1000))
+
+
+// const delayedColorChange = (delay,color)=>{
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             document.body.style.backgroundColor =color;
+//             resolve();
+//         },delay);
+//     })
+// }
+
+// delayedColorChange(1000,'red')
+//     .then(()=>{delayedColorChange(2000,'green')})
+//     .then(()=>{delayedColorChange(3000,'blue')})
+//     .then(()=>{delayedColorChange(4000,'orange')})
+    

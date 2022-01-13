@@ -9,6 +9,7 @@ form.addEventListener('submit', async function (e) {
 })
 
 const makeImages = (shows) => {
+    console.log(shows);
     for (let result of shows) {
         if (result.show.image) {
             const img = document.createElement('IMG');
