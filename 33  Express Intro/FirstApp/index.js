@@ -34,7 +34,7 @@ app.get('/cats', (req, res) => {
 app.get('/dogs', (req, res) => {
     res.send('WOOF!')
 })
-app.get('/search', (req, res) => {
+app.get('/search', (req, res) => {  // abc.com/search?cat='dag'
     const { q } = req.query;
     if (!q) {
         res.send('NOTHING FOUND IF NOTHING SEARCHED!')
