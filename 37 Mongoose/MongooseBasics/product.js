@@ -46,8 +46,8 @@ const productSchema = new mongoose.Schema({
 //     console.log(`- from ${this.name}`)
 // }
 
-productSchema.methods.toggleOnSale = function () {
-    this.onSale = !this.onSale;
+productSchema.methods.toggleOnSale = function () { // kind of function added on productSchema.
+    this.onSale = !this.onSale; // here keyword 'this' refers to the individual instance.
     return this.save();
 }
 
@@ -57,8 +57,8 @@ productSchema.methods.addCategory = function (newCat) {
     return this.save();
 }
 
-productSchema.statics.fireSale = function () {
-    return this.updateMany({}, { onSale: true, price: 0 })
+productSchema.statics.fireSale = function () { // staic method means this inctances is not here it is working in whole schema not on individual instances.
+    return this.updateMany({}, { onSale: true, price: 0 }) // can work on all not like each intances as in above methods
 }
 
 

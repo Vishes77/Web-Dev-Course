@@ -12,11 +12,13 @@ const personSchema = new mongoose.Schema({
     first: String,
     last: String
 })
-
-personSchema.virtual('fullName').get(function () {
+// just like a function on inctances of schema. any instance can access full name here to get the full name.
+personSchema.virtual('fullName').get(function () { 
     return `${this.first} ${this.last}`
 })
 
+
+//down these are middleware on mongo.
 personSchema.pre('save', async function () {
     this.first = 'YO';
     this.last = 'MAMA';
