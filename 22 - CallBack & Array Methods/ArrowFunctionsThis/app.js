@@ -15,6 +15,7 @@ const person = {
     }
 }
 
+//this keyword binds from where it is called mot where it is defined.(https://www.youtube.com/watch?v=4LWGZfkHeL8).
 
 
 // It has different values depending on where it is used:
