@@ -11,22 +11,26 @@ button {
     background-color: #a8dadc;
 }
 
-h1,h2 {
+h1,
+h2 {
     color: #1d3557;
 }
 
+
 /* Id selector  */
-#signup{ 
+
+#signup {
     background-color: #1d3557;
     color: #f1faee;
 }
-
 
 span {
     color: #457b9d;
 }
 
+
 /* Class Selector */
+
 .tag {
     background-color: #e63946;
     color: #f1faee;
@@ -38,15 +42,21 @@ span {
     font-weight: 900;
     text-decoration: none;
 }
+
+
 /* Descendent Selector   Select selctor which are nested
 inside the first tag name  */
+
 footer a {
     color: #e63946;
 }
+
+
 /* Adjacent Selectors  : Slect only the paragraph that
 are immediately preceded by an <h2> in this
 In this case every only the first button after h2 , font size
 will be changed to 20px and color will be changed */
+
 
 /* 
 Adjacent Sibling Selector (+)
@@ -55,15 +65,23 @@ The adjacent sibling selector is used to select an element that is directly afte
 Sibling elements must have the same parent element, and "adjacent" means "immediately following".
 
 The following example selects the first <p> element that are placed immediately after <div> elements: */
-h2 + button {
+
+h2+button {
     font-size: 20px;
     color: tomato;
 }
 
+
+/* after h2, button will get selected */
+
+
 /* Child Selector (>)
 The child selector selects all elements that are the children of a specified element. */
+
+
 /* But not work on neseted child */
-footer > a {
+
+footer>a {
     color: #457b9d;
 }
 
@@ -76,42 +94,57 @@ The following example selects all <p> elements that are siblings of <div> elemen
 Example
 div ~ p {
   background-color: yellow;
-} 
------------------------------*/
+}
+ /*within same block after div all the sibling p will get selected  */
+
+
+/* -----------------------------*/
 
 
 /* Attribute Selector
 Select all input elements where the type attribute 
 set to "text" */
+
 input[type="password"] {
     color: greenyellow;
 }
 
-a[href*="google"]{
+a[href*="google"] {
     color: #1d3557;
 }
+
 
 /* Below down are Pseudo Classes
 Keyword added to a selector that specifies a special of the 
 selected elemnts. */
+
 .post a:hover {
     text-decoration: underline;
 }
 
+
 /* Avtive is when it clicked in case of a button */
+
 .post button:active {
     background-color: #02c39a;
 }
+
+
 /* Select one in a group of siblings
 here every second number(even) are slected */
-.post:nth-of-type(2n){
+
+.post:nth-of-type(2n) {
     background-color: #dfe8dc;
 }
+
 
 /* Down here we have PSEUDO CLASSES 
 Kewyword added to a selector that specifies a special state of the 
 sleceted element  */
+
+
 /* Here select on perticular part of a selected element  */
+
 h2::first-letter {
     font-size: 50px;
 }
@@ -119,9 +152,14 @@ h2::first-letter {
 p::first-line {
     color: purple;
 }
+
+
 /* We we select using mouse right click drag  */
+
+
 /* Here in right click selection of paragraph 
 the color of selection will be chaged to color given */
+
 p::selection {
     background-color: #fcbf49;
 }

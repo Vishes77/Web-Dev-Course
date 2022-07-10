@@ -2,6 +2,8 @@ h1 {
     text-align: center;
     font-weight: 900;
     text-decoration: #f78120 underline wavy;
+    /* The text-decoration property specifies the decoration added to text, and is a shorthand property for:
+    text-decoration-line (required) text-decoration-color text-decoration-style text-decoration-thickness */
     letter-spacing: 25px;
     font-size: 80px;
     /* font-family: Segoe UI, Futura, Arial, sans-serif; */

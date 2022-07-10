@@ -1,0 +1,33 @@
+#Container {
+    height: 500px;
+    display: flex;
+    background-color: aqua;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* flex-flow: row wrap; */
+    /* justify-content: space-between; */
+    /* align-items: stretch; */
+    /* align-content: space-between; */
+    /* align items does vertical alignment whereas justify-content does horizental work */
+    /* align-content is same as justify-content but it works vertically */
+    /* flex-wrap is used when we need wrap all the contents where we increase the no of contents inside the flex-container along with maintaing the size  */
+}
+
+div {
+    height: 80px;
+    width: 100px;
+    background-color: white;
+    margin: 10px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+}
+
+
+/* for resposiveness in flex-box */
+
+@media (max-width: 800px) {
+    #Container {
+        flex-direction: column;
+    }
+}

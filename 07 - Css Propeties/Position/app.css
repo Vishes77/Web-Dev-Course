@@ -7,20 +7,27 @@ div {
     display: inline-block;
 }
 
-
 #middle {
     background-color: #81b29a;
 }
+
+
 /* The element is positioned according 
 to the normal flow of the document. 
 The top, right, bottom, left, and z-index properties have no effect. This is the default value. */
+
 #static #middle {
     position: static;
     top: 100px;
+    /* top 100px not working becuase static files go with the acutual flow */
 }
+
+
 /* The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. */
+
 #relative #middle {
     position: relative;
+    /* first go with the flow then we can change its postions with left right top bottom values which shifts elements that ways. */
     top: 50px;
     left: 50px;
 }
@@ -28,18 +35,34 @@ The top, right, bottom, left, and z-index properties have no effect. This is the
 #absolute {
     position: relative;
 }
+
+
 /* The element is removed from the normal document flow, and no space is created for the element in the page layout. 
 It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the 
 initial containing block. Its final position is determined by the values of top, right, bottom, and left. */
+
 #absolute #middle {
     position: absolute;
+    /* in absolute the element comes out of the flow and can go anywhere independently even on the top of elements */
     top: 1px;
     left: 1px;
 }
+
+
 /* Fixed is same as absoulte only difference is
 in this it does place itself with respect to parent flow */
+
 #fixed #middle {
     position: fixed;
     top: 0;
     left: 400px;
+}
+
+#Sticky {
+    position: sticky;
+    top: 0;
+}
+
+#Sticky div {
+    background-color: yellow;
 }

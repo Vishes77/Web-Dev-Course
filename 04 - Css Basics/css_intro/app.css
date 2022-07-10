@@ -4,8 +4,10 @@ h2 {
 }
 
 button {
-    color: magenta;
+    color: magenta; 
+    /* color is for text color */
     background-color: cyan;
+    /* background-color is for background */
 }
 
 p {
@@ -14,7 +16,7 @@ p {
 }
 
 body {
-    background-color: #c5e;
+    background: #c5e;
 }
 
 
